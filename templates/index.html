@@ -70,7 +70,9 @@
 
             </div>   
             <div id="formulario" class=" px-5 py-5">
-                <form action="Pegar Informações">
+                <form action="." method="post">
+                    {%csrf_token%}
+                    {{ form }}
                     <div id="nome">
                         <label 
                             for="Nome:"
